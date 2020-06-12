@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import { timeStamp } from 'console';
 
 @Component(
     {
@@ -8,5 +9,7 @@ import {Component} from '@angular/core';
     }
 )
 export class saludarComponent{
-
+    @Input() nombre:string;
+    constructor(){
+    }
 }
