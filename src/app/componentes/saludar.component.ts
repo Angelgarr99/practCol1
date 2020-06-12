@@ -11,10 +11,21 @@ import { timeStamp } from 'console';
 export class saludarComponent{
     @Input() nombre:string;
     @Output() saludar: EventEmitter<string>= new EventEmitter<string>();
+
+    public nombres: Array<string>=[]; 
+    public nombreLista:string="Angel";
+
     constructor(){
     }
 
     onClick(){
         this.saludar.emit('Hola!!');
+    }
+    
+    onButtonClick(){
+        this.nombres.push(this.nombreLista);
+        this.nombreLista='';
+        console.log(this.nombres);
+
     }
 }
