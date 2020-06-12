@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, Output, EventEmitter} from '@angular/core';
 import { timeStamp } from 'console';
 
 @Component(
@@ -10,6 +10,11 @@ import { timeStamp } from 'console';
 )
 export class saludarComponent{
     @Input() nombre:string;
+    @Output() saludar: EventEmitter<string>= new EventEmitter<string>();
     constructor(){
+    }
+
+    onClick(){
+        this.saludar.emit('Hola!!');
     }
 }
