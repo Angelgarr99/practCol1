@@ -1,5 +1,6 @@
 import {Component, Input, Output, EventEmitter} from '@angular/core';
-import { timeStamp } from 'console';
+import { ValueConverter } from '@angular/compiler/src/render3/view/template';
+import { element } from 'protractor';
 
 @Component(
     {
@@ -13,7 +14,7 @@ export class saludarComponent{
     @Output() saludar: EventEmitter<string>= new EventEmitter<string>();
 
     public nombres: Array<string>=[]; 
-    public nombreLista:string="Angel";
+    public nombreLista:string="";
 
     constructor(){
     }
@@ -21,11 +22,11 @@ export class saludarComponent{
     onClick(){
         this.saludar.emit('Hola!!');
     }
-    
-    onButtonClick(){
-        this.nombres.push(this.nombreLista);
-        this.nombreLista='';
-        console.log(this.nombres);
 
+    onButtonClick(){
+        this.nombres.push((document.getElementById("nombreL") as HTMLInputElement).value);
+        console.log(this.nombres);
+        (document.getElementById("nombreL") as HTMLInputElement).value="";
+        (document.getElementById("nombreL") as HTMLInputElement).focus();
     }
 }
