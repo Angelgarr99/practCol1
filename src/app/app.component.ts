@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'practCol1';
-  name = 'Libni';
+
   
   onSaludar(mensaje){ 
    console.log(mensaje);

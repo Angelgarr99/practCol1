@@ -10,18 +10,18 @@ import { element } from 'protractor';
     }
 )
 export class saludarComponent{
-    @Input() nombre:string;
+    @Input() nombre:string="AngelG";
     @Output() saludar: EventEmitter<string>= new EventEmitter<string>();
 
     public nombres: Array<string>=[]; 
     public nombreLista:string="";
-
     constructor(){
     }
 
     onClick(){
         this.saludar.emit('Hola!!');
     }
+
 
     onButtonClick(){
         this.nombres.push((document.getElementById("nombreL") as HTMLInputElement).value);
