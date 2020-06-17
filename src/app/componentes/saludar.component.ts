@@ -10,7 +10,7 @@ import { element } from 'protractor';
     }
 )
 export class saludarComponent{
-    @Input() nombre:string="AngelG";
+    @Input() nombre:string="Libi H";
     @Output() saludar: EventEmitter<string>= new EventEmitter<string>();
 
     public nombres: Array<string>=[]; 
