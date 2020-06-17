@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { saludarComponent } from './componentes/saludar.component';
+import {FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { saludarComponent } from './componentes/saludar.component';
     saludarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 <h1>Agregar Nombres a una lista</h1>
 <div>
-    <input type="text" id="nombreL" [value]="nombreLista" autofocus><br>
+    <input type="text" [(ngModel)]="nombreLista" autofocus><br>
     <button (click)="onButtonClick()">Añadir nombre</button>
 </div>
 

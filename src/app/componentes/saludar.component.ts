@@ -24,9 +24,8 @@ export class saludarComponent{
 
 
     onButtonClick(){
-        this.nombres.push((document.getElementById("nombreL") as HTMLInputElement).value);
+        this.nombres.push(this.nombreLista);
+        this.nombreLista='';
         console.log(this.nombres);
-        (document.getElementById("nombreL") as HTMLInputElement).value="";
-        (document.getElementById("nombreL") as HTMLInputElement).focus();
     }
 }
