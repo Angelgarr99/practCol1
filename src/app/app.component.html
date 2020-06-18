@@ -1,1 +1,9 @@
-<saludar-app [nombre] (saludar)="onSaludar($event)"></saludar-app>
+<div>
+    <h1>
+        Componente app.component.html
+    </h1>
+    <p>
+        Escribiendo: <strong>{{mivariable.nombreLista}}</strong>
+    </p>
+</div>
+<saludar-app #mivariable [nombre] (saludar)="onSaludar($event)"></saludar-app>
