@@ -1,100 +1,139 @@
 <div id="layoutAuthentication">
-    <div id="layoutAuthentication_content">
-        <main>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-7">
-                        <div class="card shadow-lg border-0 rounded-lg mt-5">
-                            <div class="card-header"><h3 class="text-center font-weight-light my-4">Agregar</h3></div>
-                            <div class="card-body">
-                                <form>
-                                    <div class="form-row">
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label class="small mb-1" for="iId">ID(Escriba un ID de 100-105)</label>
-                                                <input class="form-control" id="iId" type="text" placeholder="ID" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label class="small mb-1" for="iNombre">Nombre</label>
-                                                <input class="form-control" id="iNombre" type="text" placeholder="Ingrese su Nombre"/>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                        </div>
-                                        <div class="col-md-12">
-                                            <label class="small mb-1" for="iId">Año de nacimiento</label>
-                                            <input class="form-control" id="iId" type="number" min=1980 max=2010 />                                            <div class="form-group">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label class="small mb-1" for="sGenero">Seleccione un Genero</label>
-                                                <div class="custom-control custom-radio">
-                                                    <input type="radio" id="iGen1" name="iGen" class="custom-control-input">
-                                                    <label class="custom-control-label" for="iGen1">Masculino</label>
-                                                  </div>
-                                                  <div class="custom-control custom-radio">
-                                                    <input type="radio" id="iGen2" name="iGen" class="custom-control-input">
-                                                    <label class="custom-control-label" for="iGen2">Femenino</label>
-                                                  </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block">Agregar</a></div>
-                                </form>
-                            </div>
-                            <div class="card-footer text-center">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
-</div>
-<br>
-<div id="layoutSidenav_content">
+  <div id="layoutAuthentication_content">
     <main>
-        <div class="container-fluid">
-            <div class="card mb-4">
-                <div class="card-header">
-                    <i class="fas fa-table mr-1"></i>
-                    Tabla con datos
-                </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Nombre</th>
-                                    <th>Genero</th>
-                                    <th>Año de nacimiento</th>
-                                </tr>
-                            </thead>
-                            <tfoot>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Nombre</th>
-                                    <th>Genero</th>
-                                    <th>Año de nacimiento</th>
-                                </tr>
-                            </tfoot>
-                            <tbody>
-                                <tr>
-                                    <td>Donna Snider</td>
-                                    <td>Customer Support</td>
-                                    <td>New York</td>
-                                    <td>27</td>
-                                </tr>
-                            </tbody>
-                        </table>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="card shadow-lg border-0 rounded-lg mt-5">
+              <div class="card-header">
+                <h3 class="text-center font-weight-light my-4">Agregar</h3>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="form-row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label class="small mb-1" for="iId"
+                          >ID(Escriba un ID de 100-105)</label
+                        >
+                        <input
+                          class="form-control"
+                          id="iId"
+                          type="text"
+                          placeholder="ID"
+                        />
+                      </div>
                     </div>
-                </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="small mb-1" for="iNombre">Nombre</label>
+                        <input
+                          class="form-control"
+                          id="iNombre"
+                          type="text"
+                          placeholder="Ingrese su Nombre"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-8"></div>
+                    <div class="col-md-12">
+                      <label class="small mb-1" for="iId"
+                        >Año de nacimiento</label
+                      >
+                      <input
+                        class="form-control"
+                        id="iId"
+                        type="number"
+                        min="1980"
+                        max="2010"
+                      />
+                      <div class="form-group"></div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="small mb-1" for="sGenero"
+                          >Seleccione un Genero</label
+                        >
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            id="iGen1"
+                            name="iGen"
+                            class="custom-control-input"
+                          />
+                          <label class="custom-control-label" for="iGen1"
+                            >Masculino</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            id="iGen2"
+                            name="iGen"
+                            class="custom-control-input"
+                          />
+                          <label class="custom-control-label" for="iGen2"
+                            >Femenino</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mt-4 mb-0">
+                    <a class="btn btn-primary btn-block">Agregar</a>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer text-center"></div>
             </div>
+          </div>
         </div>
+      </div>
     </main>
+  </div>
 </div>
-
+<br />
+<div id="layoutAuthentication">
+  <div id="layoutAuthentication_content">
+    <main>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="card shadow-lg border-0 rounded-lg mt-5">
+              <table class="table table-striped table-bordered">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Año de nacimiento</th>
+                    <th scope="col">Genero</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
