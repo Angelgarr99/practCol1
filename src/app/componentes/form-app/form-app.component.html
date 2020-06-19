@@ -1,0 +1,139 @@
+
+    <div id="layoutAuthentication">
+        <div id="layoutAuthentication_content">
+            <main>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Crear Cuenta</h3></div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label class="small mb-1" for="iNombre">Nombre(s)</label>
+                                            <input class="form-control" id="iNombre" type="text" placeholder="Escriba su(s) nombre(s)" />
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="small mb-1" for="iApellido1">Primer Apellido</label>
+                                                    <input class="form-control" id="iApellido1" type="text" placeholder="Escriba su Primer Apellido" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="small mb-1" for="iApellido2">Segundo Apellido</label>
+                                                    <input class="form-control" id="iApellido2" type="text" placeholder="Enter last name" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="small mb-1" for="iDate">Fecha de nacimimento</label>
+                                                    <input class="form-control" type="date" id="iDate" name="trip-start"
+                                                        min="1950-01-01" max="2021-01-01">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="small mb-1" for="sEstados">Estado de Origen</label>
+                                                    <select class="form-control" id="sEstados">
+                                                        <option value="no">Seleccione uno...</option>
+                                                        <option value="Aguascalientes">Aguascalientes</option>
+                                                        <option value="Baja California">Baja California</option>
+                                                        <option value="Baja California Sur">Baja California Sur</option>
+                                                        <option value="Campeche">Campeche</option>
+                                                        <option value="Chiapas">Chiapas</option>
+                                                        <option value="Chihuahua">Chihuahua</option>
+                                                        <option value="CDMX">Ciudad de México</option>
+                                                        <option value="Coahuila">Coahuila</option>
+                                                        <option value="Colima">Colima</option>
+                                                        <option value="Durango">Durango</option>
+                                                        <option value="Estado de México">Estado de México</option>
+                                                        <option value="Guanajuato">Guanajuato</option>
+                                                        <option value="Guerrero">Guerrero</option>
+                                                        <option value="Hidalgo">Hidalgo</option>
+                                                        <option value="Jalisco">Jalisco</option>
+                                                        <option value="Michoacán">Michoacán</option>
+                                                        <option value="Morelos">Morelos</option>
+                                                        <option value="Nayarit">Nayarit</option>
+                                                        <option value="Nuevo León">Nuevo León</option>
+                                                        <option value="Oaxaca">Oaxaca</option>
+                                                        <option value="Puebla">Puebla</option>
+                                                        <option value="Querétaro">Querétaro</option>
+                                                        <option value="Quintana Roo">Quintana Roo</option>
+                                                        <option value="San Luis Potosí">San Luis Potosí</option>
+                                                        <option value="Sinaloa">Sinaloa</option>
+                                                        <option value="Sonora">Sonora</option>
+                                                        <option value="Tabasco">Tabasco</option>
+                                                        <option value="Tamaulipas">Tamaulipas</option>
+                                                        <option value="Tlaxcala">Tlaxcala</option>
+                                                        <option value="Veracruz">Veracruz</option>
+                                                        <option value="Yucatán">Yucatán</option>
+                                                        <option value="Zacatecas">Zacatecas</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="small mb-1" for="sGenero">Seleccione un Genero</label>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="iGen1" name="iGen" class="custom-control-input">
+                                                        <label class="custom-control-label" for="iGen1">Masculino</label>
+                                                      </div>
+                                                      <div class="custom-control custom-radio">
+                                                        <input type="radio" id="iGen2" name="iGen" class="custom-control-input">
+                                                        <label class="custom-control-label" for="iGen2">Femenino</label>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="iFoto">Subir una foto de usuario</label>
+                                                    <input type="file" class="form-control-file" id="iFoto">
+                                                  </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="small mb-1" for="iMat">Matricula</label>
+                                                    <input class="form-control" id="Imat" type="text" placeholder="Ingrese su matricula Estudiantil"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="small mb-1" for="iCUPR">C.U.R.P.</label>
+                                                    <input class="form-control" id="ICURP" type="text" placeholder="Ingrese su CURP"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="small mb-1" for="iEmail">Email Univercitario</label>
+                                            <input class="form-control" id="iEmail" type="email" aria-describedby="emailHelp" placeholder="Ingrese su correo univercitario" />
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="small mb-1" for="iPass">Contraseña</label>
+                                                    <input class="form-control" id="iPass" type="password" placeholder="Ingrese una contraseña"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="small mb-1" for="iConPass">Confirmar Contraseña</label>
+                                                    <input class="form-control" id="iConPass" type="password" placeholder="Confirmar Contraseña" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" href="login.html">Crear Cuenta</a></div>
+                                    </form>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <div class="small"><a href="login.html">Tienes una cuenta? inicia Sesion</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+    </div>
