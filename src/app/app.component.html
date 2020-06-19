@@ -1,11 +1,1 @@
-<div>
-    <h1 
-    [style.font-size.cm]="mivariable.nombreLista.length > 0 ? 3 : 1"
-    [style.color]="mivariable.nombreLista.length > 0 ? 'blue': 'black'">
-        Componente app.component.html
-    </h1>
-    <p [class.invisible]="mivariable.nombreLista.length == 0">
-        Escribiendo: <strong>{{mivariable.nombreLista}}</strong>
-    </p>
-</div>
 <saludar-app #mivariable [nombre]="name" (saludar)="onSaludar($event)"></saludar-app>
