@@ -5,7 +5,7 @@
 <div [ngSwitch]="nombres.length">
     <div>
         <input type="text" [(ngModel)]="nombreLista"/>
-        <br />
+        <br/>
         <button (click)="onButtonClick()">Añadir nombre</button>
     </div>
     <div *ngSwitchCase="1">

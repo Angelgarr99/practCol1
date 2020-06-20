@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-app.component.css']
 })
 export class AddAppComponent implements OnInit {
-
+  mostrar = true;
   constructor() { }
 
   ngOnInit(): void {

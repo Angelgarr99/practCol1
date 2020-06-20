@@ -15,14 +15,13 @@ export class saludarComponent{
 
     public nombres: Array<string>=[]; 
     public nombreLista:string="";
+    
     constructor(){
     }
 
     onClick(){
         this.saludar.emit('Hola!!');
     }
-
-
     onButtonClick(){
         this.nombres.push(this.nombreLista);
         this.nombreLista='';
