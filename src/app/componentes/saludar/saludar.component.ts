@@ -18,7 +18,7 @@ export class saludarComponent{
     
     constructor(){
     }
-
+ 
     onClick(){
         this.saludar.emit('Hola!!');
     }
