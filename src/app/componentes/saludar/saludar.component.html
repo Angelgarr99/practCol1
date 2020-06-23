@@ -8,6 +8,17 @@
         <br/>
         <button (click)="onButtonClick()">Añadir nombre</button>
     </div>
+    <br>
+    <span>Progreso:</span>
+    <div class="col-md-8">
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped" role="progressbar" [ngClass]="progreso(nombreLista)" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+</div>
+    <p>
+        Escribiendo.. <span [ngClass]="validando(nombreLista)">{{nombreLista}}</span>
+    </p>
+
     <div *ngSwitchCase="1">
         <p>Uno</p>
     </div>
@@ -17,7 +28,3 @@
 </div>
 
 <p *ngFor="let item of nombres; index as i">{{ i }}.-Hola {{ item }}</p>
-
-<p>
-    Escribiendo.. <span [ngClass]="validando(nombreLista)">{{nombreLista}}</span>
-</p>

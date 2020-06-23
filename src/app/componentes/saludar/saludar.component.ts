@@ -35,4 +35,16 @@ export class saludarComponent{
             'strong': texto.length > 7
         }
     }
+    progreso(texto:string){
+        return{
+            'cero':texto.length < 1,
+            ' uno': texto.length ===1, 
+            ' dos': texto.length ===2, 
+            ' tres': texto.length == 3, 
+            ' cuatro': texto.length == 4, 
+            ' cinco': texto.length == 5, 
+            ' seis': texto.length == 6, 
+            ' siete': texto.length >=7, 
+        }
+    }
 }
