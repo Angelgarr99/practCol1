@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 export class FormAppComponent implements OnInit {
 
   constructor() { }
-
+ 
   ngOnInit(): void {
   }
 }
