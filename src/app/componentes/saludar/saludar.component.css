@@ -7,29 +7,33 @@ p{
 }
 .uno{
     background-color:red;
-    width: 14.2%;
+    width: 12.5%;
 }
 .dos{
     background-color:red;
-    width: 28.5%;
+    width: 25%;
 }
 .tres{
     background-color:red;
-    width: 42.8%;
+    width: 37.4%;
 }
 .cuatro{
     background-color:rgb(255, 197, 8);
-    width: 57.1%;
+    width: 50%;
 }
 .cinco{
     background-color:rgb(255, 197, 8);
-    width: 71.4%;
+    width: 62.5%;
 }
 .seis{
     background-color:rgb(255, 197, 8);
-    width: 85.7%;
+    width: 75%;
 }
 .siete{
+    background-color:rgb(255, 197, 8);
+        width: 87.5%;
+}
+.ocho{
     background-color:green;
         width: 100%;
 }

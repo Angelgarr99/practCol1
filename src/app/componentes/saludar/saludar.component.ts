@@ -44,7 +44,8 @@ export class saludarComponent{
             ' cuatro': texto.length == 4, 
             ' cinco': texto.length == 5, 
             ' seis': texto.length == 6, 
-            ' siete': texto.length >=7, 
+            ' siete': texto.length ==7,
+            'ocho': texto.length >=8, 
         }
     }
 }
