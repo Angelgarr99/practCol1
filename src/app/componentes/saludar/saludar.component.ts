@@ -45,7 +45,7 @@ export class saludarComponent{
             ' cinco': texto.length == 5, 
             ' seis': texto.length == 6, 
             ' siete': texto.length ==7,
-            'ocho': texto.length >=8, 
+            'ocho': texto.length >=8
         }
     }
 }
